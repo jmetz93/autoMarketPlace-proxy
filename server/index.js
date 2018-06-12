@@ -2,7 +2,9 @@ const path = require('path');
 const express = require('express');
 const helmet = require('helmet');
 
-const PORT = process.env.port || 9000;
+require('dotenv').config();
+
+const PORT = process.env.PORT || 9000;
 
 const app = express();
 

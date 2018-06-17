@@ -1,114 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="index-style.css" rel="stylesheet">
+  <link href="http://52.53.217.43:5673/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <title>Gryffinwheels Not-o-Trader</title>
-  <style>
-    body {
-      font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
-    }
-    div#app {
-      min-width: 1000px;
-    }
-    nav#navbar {
-      background-color: #6f81aa;
-      color: white;
-    }
-    nav#navbar ul.navbar-items {
-      display: flex;
-      flex: auto;
-      align-items: center;
-      height: 56px;
-      list-style: none;
-      max-height: 50%;
-    }
-    nav#navbar ul.navbar-items li {
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      margin: auto;
-    }
-    nav#navbar ul.navbar-items li:first-child {
-      margin-left: 0;
-    }
-    div#left, div#right {
-      display: inline-block;
-    }
-    div#right {
-      float: right;
-      position: absolute;
-    }
-    div#vehicle-overview > div:first-child {
-      margin-left: auto !important;
-    }
-    footer {
-      background-color: #6f81aa;
-      color: white;
-    }
-    footer div#footer-nav {
-      padding-top: 21px;
-      margin-left: 54px;
-    }
-    footer div.legalese {
-      margin-top: 20px;
-      font-size: 0.75em;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
   <div id="app">
-    <div id="container">
-      <nav id="navbar">
-        <div class="logo">
-          <ul class="navbar-items">
-            <li>Gryffinwheels Not-O-Trader</li>
-          </ul>
-        </div>
+      <div class="navbar">
+        <img id="logo" src="http://52.53.217.43:3000/Not-O-Trader.png" width="220px" height="60px" />
+        <br />
+        <span id="nav-text">0 saved&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Sign In&nbsp;&nbsp;&nbsp;&nbsp;Edit My Ad</span>
+        <br />
         <hr />
-        <div>
-          <ul class="navbar-items">
-            <li>Cars for Sale</li>
-            <li>Sell My Car</li>
-            <li>Trade in My Car</li>
-            <li>Car Research &amp; Reviews</li>
-            <li>Find Local Dealers</li>
-            <li>Loans</li>
-            <li>Insurance</li>
-          </ul>
-        </div>
-      </nav>
-      <div id="left">
-        <div id="image-gallery"></div>
-        <div id="vehicle-overview"></div>
-        <div id="about-model"></div>
+        <br />
       </div>
-      <div id="right">
-        <div id="seller-sidebar"></div>
+      <div class="container navbar-items">
+          <span>Cars for Sale</span>
+          <span>Sell My Car</span>
+          <span>Trade in My Car</span>
+          <span>Car Research &amp; Reviews</span>
+          <span>Find Local Dealers</span>
+          <span>Loans</span>
+          <span>Insurance</span>
+      </div>
+      <div class="main-bkgd">
+        <div class="main">
+          <div id="left">
+            <div id="image-gallery"></div>
+            <div id="vehicle-overview"></div>
+            <div id="about-model"></div>
+          </div>
+          <div id="right">
+            <div id="seller-sidebar"></div>
+          </div>
+        </div>
       </div>
       <footer>
         <div id="footer-nav">
           <div>&gt; Shop for a Car</div>
           <hr />
-          <div>&gt; Trade orr Sell a Car</div>
+          <div>&gt; Trade or Sell a Car</div>
           <hr />
           <div>&gt; Car Research</div>
           <hr />
           <div>&gt; About Us</div>
           <hr />
-          <div>&gt; Autotrader Affiliates</div>
+          <div>&gt; Not-O-Trader Affiliates</div>
           <hr />
           <div class="legalese">
             <p>By using this service, you accept the terms of our Visitor Agreement.</p>
             <p>
               © 2018 Gryffinwheels Not-O-Trader, Inc. All Rights Reserved.
               "Gryffinwheels Not-O-Trader" is a registered trademark of HRLA22 Gryffindor Holdings, Inc.
+              <br />
               used under exclusive license.
             </p>
+            <br />
           </div>
         </div>
       </footer>
@@ -118,7 +72,8 @@
   <!-- <script src="https://s3-us-west-2.amazonaws.com/gryffinwheels/seller-sidebar.js"></script> -->
   <script src="http://18.191.161.74:7000/bundle.js"></script> <!-- Image gallery -->
   <!-- <script src="https://s3-us-west-2.amazonaws.com/gryffinwheels/image-gallery.js"></script> -->
-  <script src="https://s3-us-west-2.amazonaws.com/gryffinwheels/about-model.js"></script>
+  <script src="http://52.53.217.43:5673/bundle.js"></script>
+  <!-- <script src="https://s3-us-west-2.amazonaws.com/gryffinwheels/about-model.js"></script> -->
   <script src="https://s3-us-west-2.amazonaws.com/gryffinwheels/vehicle-overview.js"></script>
 </body>
 </html>

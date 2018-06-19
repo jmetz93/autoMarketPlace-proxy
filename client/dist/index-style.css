@@ -50,6 +50,7 @@ div#app {
   padding: 0px 20px 20px 20px;
   min-width: 700px;
   max-width: 1000px;
+  padding-left: 265px;
 }
 div#left, div#right {
   display: inline-block;

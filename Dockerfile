@@ -1,7 +1,10 @@
 FROM node:10.4.1-alpine
-WORKDIR /app
-ADD . /app
+RUN mkdir /proxy-server
+
+WORKDIR /proxy-server
+COPY package.json /proxy-server
 RUN npm install
-EXPOSE 5700
-ENV PORT 5700
-CMD ["node", "server/index.js"]
+
+COPY . .
+EXPOSE 8080
+CMD ["npm", "start"]
